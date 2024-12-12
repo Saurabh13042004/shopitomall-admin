@@ -21,7 +21,7 @@ export function ResponseTable() {
           <tr>
             <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Name</th>
             <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Contact Info</th>
-            <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Country</th>
+            {/* <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Country</th> */}
             <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Submitted At</th>
             <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>
           </tr>
@@ -34,7 +34,7 @@ export function ResponseTable() {
                 <div>{customer.email}</div>
                 <div>{customer.phone}</div>
               </td>
-              <td className="px-6 py-4 whitespace-nowrap">{customer.country}</td>
+              {/* <td className="px-6 py-4 whitespace-nowrap">{customer.country}</td> */}
               <td className="px-6 py-4 whitespace-nowrap">{formatDate(customer.submit_time)}</td>
               <td className="px-6 py-4 whitespace-nowrap">
                 <button
