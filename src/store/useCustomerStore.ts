@@ -4,7 +4,7 @@ export const useCustomerStore = create((set) => ({
   customers: [],
   fetchCustomers: async () => {
     try {
-      const response = await fetch('https://shopitomall-server.onrender.com/users');
+      const response = await fetch('https://shopitomall-server-o22u.onrender.com/users');
       const data = await response.json();
       const sortedData = data.users.sort((a, b) => b.id - a.id); // Sort users by id in descending order
       set({ customers: sortedData });
